@@ -1,0 +1,291 @@
+[2024-07-22 19:38:53,176][Add.py entry 20][fd65f78a-a106-4da1-9e15-2b24cd92287b]start add
+[2024-07-22 19:58:20,562][Add.py entry 21][59fe556b-ea4d-4a1e-b948-2a5857f520fc]start add
+[2024-07-22 19:58:24,255][Add.py entry 21][43c4ac70-6345-4dbf-bfc6-555c39fd8e33]start add
+[2024-07-22 19:58:27,636][Add.py entry 21][8cedbfbe-ba01-4a3b-9914-d84ebc00efbd]start add
+[2024-07-22 19:58:28,836][Add.py entry 21][4810f574-197c-478d-809b-0b938a92704a]start add
+[2024-07-22 19:58:29,986][Add.py entry 21][f2cbdbe6-db77-4b42-a380-954305777042]start add
+[2024-07-22 19:58:30,770][Add.py entry 21][b25ebec1-2eff-45ac-a3bf-c05e35411b0e]start add
+[2024-07-22 19:58:31,501][Add.py entry 21][3adee603-2689-4b64-bf22-0988ee43f9d2]start add
+[2024-07-22 20:03:19,069][Add.py entry 21][28e3dc85-7f73-4297-a66c-b244ad28e7fa]start add
+[2024-07-22 20:03:23,773][Add.py entry 21][9b3d419c-ec55-428c-937d-e4f7510ee611]start add
+[2024-07-22 20:03:25,039][Add.py entry 21][f6bb123c-dd19-4a62-b26b-2242dd75df36]start add
+[2024-07-22 20:03:25,933][Add.py entry 21][ce9d94c0-78b3-462c-ba01-a763c971acc8]start add
+[2024-07-22 20:03:26,728][Add.py entry 21][1bcf40d5-ca92-4d2b-bbc8-024f63446e86]start add
+[2024-07-22 20:05:33,678][middlewares.py process_exception 51][e37df971-8343-4c63-8fb9-fbed2f162c32]'str' object has no attribute 'process'
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/apps/cgi/views.py", line 16, in index
+    api.send(data)
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 81, in send
+    self.data = action(**data)
+                ^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 123, in wrap_func
+    result = func(**input_args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 144, in wrap_func
+    result = func(**input_args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/bussiness/clb/Add.py", line 20, in entry
+    request_context_proxy.process()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/local.py", line 143, in __getattr__
+    return getattr(self._get_current_object(), name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'process'
+[2024-07-22 20:05:33,681][log.py log_response 241][e37df971-8343-4c63-8fb9-fbed2f162c32]Internal Server Error: /cgi
+[2024-07-22 20:07:01,266][Add.py entry 21][3fdf500c-e8fd-403b-8be4-0d3574fc5efd]start add
+[2024-07-22 20:15:29,140][Add.py entry 21][52e58da8-0be2-4753-8de2-f44973b8ee33]start add
+[2024-07-22 20:18:36,872][middlewares.py process_exception 51][41bb7e46-8fe6-469c-a394-fa957c4b7fc6]'_TLS' object has no attribute 'request_context'
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/apps/cgi/views.py", line 16, in index
+    api.send(data)
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 81, in send
+    self.data = action(**data)
+                ^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 123, in wrap_func
+    result = func(**input_args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/router.py", line 144, in wrap_func
+    result = func(**input_args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/bussiness/clb/Add.py", line 20, in entry
+    request_context_proxy.process()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/local.py", line 143, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/local.py", line 105, in _get_current_object
+    return loc(*self.__args, **self.__kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/static.py", line 31, in get_request_context
+    return _tls.request_context
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_TLS' object has no attribute 'request_context'
+[2024-07-22 20:18:36,875][log.py log_response 241][41bb7e46-8fe6-469c-a394-fa957c4b7fc6]Internal Server Error: /cgi
+[2024-07-22 20:20:26,551][Add.py entry 21][5f25d87d-1b4c-4cb8-a4a8-543d9fbc9c88]start add
+[2024-07-22 20:20:59,909][Add.py entry 21][b887121e-58c6-48af-b84c-c5700bf53d36]start add
+[2024-07-22 20:21:48,224][Add.py entry 21][58a997d4-42a1-4ac9-b2e9-12bf00a98bed]start add
+[2024-07-22 20:22:37,942][Add.py entry 21][52ebdb2e-8abf-4102-a202-51b2dcca8b91]start add
+[2024-07-22 20:30:11,485][Add.py entry 20][ccb3a6f7-bdac-42e0-9dbe-3bbf9eb09f2e]start add
+[2024-07-22 20:30:11,486][middlewares.py process_exception 51][ccb3a6f7-bdac-42e0-9dbe-3bbf9eb09f2e]Object of type WSGIRequest is not JSON serializable
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/apps/cgi/views.py", line 17, in index
+    result = JsonResponse(api.recv())
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/http/response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type WSGIRequest is not JSON serializable
+[2024-07-22 20:30:11,490][log.py log_response 241][ccb3a6f7-bdac-42e0-9dbe-3bbf9eb09f2e]Internal Server Error: /cgi
+[2024-07-22 20:30:44,356][Add.py entry 20][fc394936-2f90-4017-9a89-60beff80d4f5]start add
+[2024-07-22 20:30:44,357][middlewares.py process_exception 51][fc394936-2f90-4017-9a89-60beff80d4f5]Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/apps/cgi/views.py", line 17, in index
+    result = JsonResponse(api.recv())
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/http/response.py", line 733, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/serializers/json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+[2024-07-22 20:30:44,359][log.py log_response 241][fc394936-2f90-4017-9a89-60beff80d4f5]Internal Server Error: /cgi
+[2024-07-22 20:31:24,509][Add.py entry 20][4e3c4c66-69cd-4c2b-b988-a633fbd1b3d7]start add
+[2024-07-22 20:31:30,571][Add.py entry 20][9000cd45-0712-4b5f-a6d8-0eb8ff6ea296]start add
+[2024-07-22 20:36:00,099][log.py log_response 241][bda73000-c80b-4bef-b0d7-a46bc1b4ad58]Internal Server Error: /cgi
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/common/middlewares.py", line 29, in process_request
+    data = json.loads(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not WSGIRequest
+[2024-07-22 20:36:18,608][log.py log_response 241][695d807a-92d9-4b23-ac0d-bb777ff3d190]Internal Server Error: /cgi
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/common/middlewares.py", line 29, in process_request
+    data = json.loads(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.12/lib/python3.12/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not WSGIRequest
+[2024-07-22 20:36:41,231][log.py log_response 241][e35e22c8-4d7a-4d23-abb3-430c4375bc8b]Internal Server Error: /cgi
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/common/middlewares.py", line 30, in process_request
+    context.Action = data.get('Action')
+    ^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 54, in __setattr__
+    _get_current_context(_tls.request_id)[name] = val
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _get_current_context() takes 0 positional arguments but 1 was given
+[2024-07-22 20:37:56,878][log.py log_response 241][6f9d00ad-3091-4f55-9466-2ad11e27486b]Internal Server Error: /cgi
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/common/middlewares.py", line 30, in process_request
+    context.Action = data.get('Action')
+    ^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 53, in __setattr__
+    _get_current_context(_tls.request_id)[name] = val
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: 'type' object does not support item assignment
+[2024-07-22 20:39:18,967][Add.py entry 21][9d4dab20-f8c2-4138-95ee-7fd7e64baac5]start add
+[2024-07-22 20:39:53,307][Add.py entry 21][9f7fabdc-e1d7-41ab-aad3-57320f3db1b3]start add
+[2024-07-22 20:39:57,689][Add.py entry 21][4c074d84-16f9-4553-bae6-9649b466b6e8]start add
+[2024-07-22 20:39:59,554][Add.py entry 21][24ee889a-d40d-41de-92b6-e44d1e9197c9]start add
+[2024-07-22 20:40:08,738][Add.py entry 21][1ac45a5e-7d7a-4c3e-8cad-2978a39fb40d]start add
+[2024-07-22 20:40:13,072][Add.py entry 21][e111e59f-008e-456c-bb09-9b2465aae0e6]start add
+[2024-07-22 20:40:35,873][Add.py entry 21][10aaf26b-390a-4aba-8cc8-050989e1a48f]start add
+[2024-07-22 20:40:38,530][Add.py entry 21][7ac1acac-03fe-41a1-825f-06bfc8ad05be]start add
+[2024-07-22 20:40:39,652][Add.py entry 21][3b35d219-8ab1-4e5c-b944-be365c8c28b5]start add
+[2024-07-22 20:40:40,993][Add.py entry 21][f4455753-6d64-486f-9d9a-d53de78c147d]start add
+[2024-07-22 20:40:42,410][Add.py entry 21][12d3eb0b-dfeb-4e64-b70e-8abf07e9bae4]start add
+[2024-07-22 20:40:53,846][Add.py entry 21][090c1230-6da3-4a3c-84fb-8b7c452a697c]start add
+[2024-07-22 20:41:38,262][Add.py entry 21][dd3f16e5-0ae9-47b4-ac0a-f24fb4633064]start add
+[2024-07-22 20:41:44,980][Add.py entry 21][e2074063-35ff-48d9-b932-6af1eb782446]start add
+[2024-07-22 20:41:54,138][Add.py entry 21][d5c922a5-940f-4cd9-bd32-32e640108814]start add
+[2024-07-22 20:41:55,564][Add.py entry 21][ae4f1275-bdfa-4ba8-8d29-5ea20cb1113f]start add
+[2024-07-22 20:41:57,230][Add.py entry 21][7802181d-9d64-487e-b1b8-399c2a8826ab]start add
+[2024-07-22 20:45:19,276][Add.py entry 21][77cd2e5a-8110-4bef-9b9f-6ad151fbd808]start add
+[2024-07-22 20:45:20,968][Add.py entry 21][718cb7f1-283d-47ef-8e25-ae1f8d5ef352]start add
+[2024-07-22 20:45:24,690][Add.py entry 21][f272d886-7461-4f1e-9553-77938637ee91]start add
+[2024-07-22 20:45:26,545][Add.py entry 21][1bbeae6c-6c61-4061-be77-4c9ac53b48a0]start add
+[2024-07-22 20:45:27,941][Add.py entry 21][7552f52c-aeca-44fa-b0ea-2def4541a54e]start add
+[2024-07-22 20:45:29,315][Add.py entry 21][20a75513-8e96-4940-b704-0aa509c45e34]start add
+[2024-07-22 20:45:30,667][Add.py entry 21][c8f30abe-cbd0-4c9b-b267-75df9fc58059]start add
+[2024-07-22 20:45:31,931][Add.py entry 21][396ea168-df03-4f71-8b01-1535559f3043]start add
+[2024-07-22 20:45:32,763][Add.py entry 21][3216c4f0-490a-4164-a5f4-40dce3d42d55]start add
+[2024-07-22 20:45:33,414][Add.py entry 21][0a58ed29-d176-4573-b19f-4a815cc79d66]start add
+[2024-07-22 20:45:34,019][Add.py entry 21][1c4b9212-eb17-45c5-a50b-a611baef446f]start add
+[2024-07-22 20:45:34,660][Add.py entry 21][115d07d2-e27e-454e-bae1-a85dd6db6385]start add
+[2024-07-22 20:45:35,317][Add.py entry 21][7ddb8ab0-2f02-41da-aef3-b53b888e24ef]start add
+[2024-07-22 20:45:35,995][Add.py entry 21][c43c2f0d-db3a-4df8-b75a-56b52177bfaf]start add
+[2024-07-22 20:45:42,254][Add.py entry 21][cee8a5d1-7b7e-46ab-add8-0cd087591ef7]start add
+[2024-07-22 20:45:43,698][Add.py entry 21][0aeb879c-e2de-420c-9d3a-173f054346e0]start add
+[2024-07-22 20:45:46,276][Add.py entry 21][a6d9e15e-e0e6-4f56-b207-264cd9981384]start add
+[2024-07-22 20:45:47,176][Add.py entry 21][290df954-f602-4966-ad89-37394a72e562]start add
+[2024-07-22 20:45:47,976][Add.py entry 21][88e94f6c-8731-49b7-bc7d-31fcf29f2b64]start add
+[2024-07-22 20:45:48,556][Add.py entry 21][990ee55b-8abf-47fc-acfe-8ee253a2cf6d]start add
+[2024-07-22 20:45:49,551][Add.py entry 21][7cc0555f-1459-4583-9da4-8911bfdf187c]start add
+[2024-07-22 20:47:08,685][Add.py entry 21][22f045ce-9f50-4d09-aa12-b8ef7b41fe89]start add
+[2024-07-22 20:47:10,103][Add.py entry 21][789b32cc-252a-4b5d-a767-12fbe86438e3]start add
+[2024-07-22 20:47:12,615][Add.py entry 21][f84268a3-8b5c-455a-86fb-eedbf74580ee]start add
+[2024-07-22 20:47:13,634][Add.py entry 21][4abb73d5-6a9e-422a-803c-7059e1eda01d]start add
+[2024-07-22 20:47:14,623][Add.py entry 21][9389ac05-8c67-4232-be24-3d26cebfeebb]start add
+[2024-07-22 20:47:15,335][Add.py entry 21][113d49ca-99fa-4159-b8fb-a3a1debec6a5]start add
+[2024-07-22 20:47:15,964][Add.py entry 21][d6f11f1a-ef8c-4d33-adef-680a67b3a143]start add
+[2024-07-22 20:47:16,272][Add.py entry 21][83ee4a84-0b87-4c8f-88cb-fd25ef7be7c7]start add
+[2024-07-22 20:48:37,850][Add.py entry 21][e9d58149-c8a5-4bbf-aaea-3e2b2fb1a1b1]start add
+[2024-07-22 20:48:39,272][Add.py entry 21][d83f5b48-644a-44df-a6ee-fadf45b33126]start add
+[2024-07-22 20:48:40,404][Add.py entry 21][0c97d078-8c71-4fd0-a417-4e4978abf8d6]start add
+[2024-07-22 20:48:41,248][Add.py entry 21][745fd517-fb40-4f24-b333-c25f5f34c6d0]start add
+[2024-07-22 20:48:41,628][Add.py entry 21][73b138ba-9367-4395-9f66-7510839250a0]start add
+[2024-07-22 20:48:42,096][Add.py entry 21][127d3273-31c0-452a-84d2-6aa82dcf7370]start add
+[2024-07-22 20:51:03,535][Add.py entry 21][88db71f4-5f31-437c-9e2d-ca9e64ce5b4a]start add
+[2024-07-22 20:51:04,588][Add.py entry 21][18625740-bd30-4fbd-b24a-c1ff9226fbd8]start add
+[2024-07-22 20:51:06,442][Add.py entry 21][fd747149-f4c5-488a-afea-a932f1f56f13]start add
+[2024-07-22 20:51:07,478][Add.py entry 21][926b642a-0370-4357-ae32-4ab16e708d17]start add
+[2024-07-22 20:51:08,445][Add.py entry 21][5d2df860-6ea8-434d-8362-5fcbcd5656ec]start add
+[2024-07-22 20:51:09,230][Add.py entry 21][ed4bd32e-ed02-46ce-b51d-589da8de6fce]start add
+[2024-07-22 20:54:30,728][log.py log_response 241][d59f68a1-ea12-43d3-a8ad-140e94ed57b6]Internal Server Error: /cgi
+Traceback (most recent call last):
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/common/middlewares.py", line 31, in process_request
+    context.Action = data.get('Action')
+    ^^^^^^^^^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 46, in __setattr__
+    _tls.context[name] = val
+    ~~~~~~~~~~~~^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 43, in __setitem__
+    _tls.context[name] = val
+    ~~~~~~~~~~~~^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 43, in __setitem__
+    _tls.context[name] = val
+    ~~~~~~~~~~~~^^^^^^
+  File "/data/home/zhhdzhang/lb_chore_proj/framework/context.py", line 43, in __setitem__
+    _tls.context[name] = val
+    ~~~~~~~~~~~~^^^^^^
+  [Previous line repeated 730 more times]
+RecursionError: maximum recursion depth exceeded in comparison
+[2024-07-22 20:55:23,950][Add.py entry 21][3ba92d2a-48d4-4993-9182-922c086c174a]start add
+[2024-07-22 20:55:30,109][Add.py entry 21][1cb95584-8e70-468d-a9a3-c47fc71611d4]start add
+[2024-07-22 20:55:31,357][Add.py entry 21][88607f6f-3e56-46c0-8425-b5372477eb07]start add
+[2024-07-22 20:55:32,098][Add.py entry 21][a2cf6b85-6601-4d97-94e9-ba92c96705d8]start add
+[2024-07-22 20:55:32,609][Add.py entry 21][510b8f2b-0298-49b2-9f48-8d8677121a0e]start add
+[2024-07-22 20:55:33,072][Add.py entry 21][6cf13243-b0ce-4a92-b5a0-9fa87dcaf680]start add
+[2024-07-22 20:55:33,445][Add.py entry 21][301e5851-a1b2-4a73-9ed4-a8368e03ea07]start add
