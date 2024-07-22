@@ -1,4 +1,4 @@
-# 分布式任务系统 lb_chore_proj
+# Django-API-Server
 ## 框架介绍
 基于 Nginx、uwsgi、Django、Celery  
 Django v5.0.7  
