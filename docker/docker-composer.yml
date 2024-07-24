@@ -1,0 +1,45 @@
+version "3"
+
+services:
+  nginx:
+    container_name: nginx-container
+    build: ./nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - api_data:/docker_api
+      - ./log:/var/log/nginx
+    depends_on:
+      -api
+  
+  api:
+    container_name: api-container
+    build: ../.
+    restart: always
+    entryponit: /docker_api/entrypoint
+    command: uwsgi --ini uwsgi.ini'
+
+    environment:
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_PASSWORD=admin1234
+      - DJANGO_SUPERUSER_EMAIL=admin@twtrubiks.com
+    volumes:
+      ../.:/docker_api
+    depends_on:
+      db
+
+  db:
+    image: mysql
+    env
+
+volumes:
+  api_data:
+
+networks: # 自定义网络(默认桥接), 不使用links通信
+  nginx_network:
+    driver: bridge
+  db_network:
+    driver: bridge
+  redis_network: 
+    driver: bridge
