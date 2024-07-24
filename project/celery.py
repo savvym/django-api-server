@@ -16,11 +16,7 @@ app = Celery('chore')
 # - namespace='CELERY' means all celery-related configuration keys
 #   should have a `CELERY_` prefix.
 app.config_from_object('django.conf:settings', namespace='CELERY')
-app.conf.task_queues = [
-    Queue('q1', routing_key='q1', queue_arguments = {
-        'x-max-priority': 10,
-    })
-]
+
 # Load task modules from all registered Django apps.
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 

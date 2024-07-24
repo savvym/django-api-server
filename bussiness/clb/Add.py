@@ -21,8 +21,6 @@ def entry(**args):
     logger.info('start add')
     request_id = get_current_request_id()
     ret = {
-        'Action': context.Action,
-        'RequestId': request_id,
         'msg': 'this is a add',
     }
     return ret
